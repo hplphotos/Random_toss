@@ -3,7 +3,9 @@ try:
      input = raw_input
 except NameError:
      pass
-import random
+
+import random,sys
+# import sys
 #
 # Create Proto-class from which all other classes descend.
 #
@@ -33,9 +35,10 @@ class die(polyhedron):
           self.outcome = random.randint(1,die.numb_sides)
           return self.outcome
 
-print("Type is ",die.poly_type,"\nNumber of sides is ",die.numb_sides, "\n\n")
+print("Type is ",die.poly_type,"\nNumber of sides is ",die.numb_sides, "\n")
 d=die()
-print("Result of throw is ",d.throw())
+print("Result of throw is ",d.throw(),"\n")
+sys.exit("...Exiting Random_Toss")
 
   
 
