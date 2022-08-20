@@ -1,23 +1,16 @@
-from __future__ import absolute_import, division, print_function
-try:
-     input = raw_input
-except NameError:
-     pass
-
 import random,sys
-# import sys
-#
+
 # Create Proto-class from which all other classes descend.
-#
+
 class polyhedron:
-#
+
 # class attributes
-#
+
      poly_type = "poly"
      numb_sides = 1
      def __init__(self):
         self.outcome=0
-#
+
      def throw(self):
           self.outcome = random.randint(1,polyhedron.numb_sides)
           return self.outcome
