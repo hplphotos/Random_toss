@@ -8,18 +8,6 @@ import random
 # Create Proto-class from which all other classes descend.
 #
 class Polyhedron:
-	'''Polyhedron is a proto-class for creating sub-objects
-	that can be used for random outcomes. Examples are coins,
-	die, roulette, draedle, and playing card.
-	There are two class variables:
-	poly_type (str) for describing the sub-orject (coin, die, etc.)
-	numb_sides (int) which is the number of sides of the object 
-		e.g., 2 for coin, 6 for a die
-	There is an instance variable (outcome) that stores the result
-	of the throw memthod.
-	There are also two methods, an _init__ and a throw method.
-	The throw method generates a random int between 1 and mumb_sides
-	'''
      poly_type = "poly"
      numb_sides = 1
      def __init__(self):
@@ -55,4 +43,15 @@ class Die(Polyhedron):
 
 
   
-
+	'''Polyhedron is a proto-class for creating sub-objects
+	that can be used for random outcomes. Examples are coins,
+	die, roulette, draedle, and playing card.
+	There are two class variables:
+	poly_type (str) for describing the sub-orject (coin, die, etc.)
+	numb_sides (int) which is the number of sides of the object 
+		e.g., 2 for coin, 6 for a die
+	There is an instance variable (outcome) that stores the result
+	of the throw memthod.
+	There are also two methods, an _init__ and a throw method.
+	The throw method generates a random int between 1 and mumb_sides
+	'''
