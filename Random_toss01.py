@@ -1,16 +1,21 @@
-import random,sys
-
+from __future__ import absolute_import, division, print_function
+try:
+     input = raw_input
+except NameError:
+     pass
+import random
+#
 # Create Proto-class from which all other classes descend.
-
+#
 class polyhedron:
-
+#
 # class attributes
-
+#
      poly_type = "poly"
      numb_sides = 1
      def __init__(self):
         self.outcome=0
-
+#
      def throw(self):
           self.outcome = random.randint(1,polyhedron.numb_sides)
           return self.outcome
@@ -28,10 +33,9 @@ class die(polyhedron):
           self.outcome = random.randint(1,die.numb_sides)
           return self.outcome
 
-print("Type is ",die.poly_type,"\nNumber of sides is ",die.numb_sides, "\n")
+print("Type is ",die.poly_type,"\nNumber of sides is ",die.numb_sides, "\n\n")
 d=die()
-print("Result of throw is ",d.throw(),"\n")
-sys.exit("...Exiting Random_Toss")
+print("Result of throw is ",d.throw())
 
   
 

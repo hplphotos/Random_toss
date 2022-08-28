@@ -1,12 +1,11 @@
-from __future__ import absolute_import, division, print_function
-try:
-     input = raw_input
-except NameError:
-     pass
+import Random_toss_classes
+
+# from Random_toss_classes import Polyhedron,Die
 #
-# Create Proto-class from which all other classes descend.
-#
-from Random_toss_classes import Polyhedron,Die
-print("Type is ",Die.poly_type,"\nNumber of sides is ",Die.numb_sides, "\n\n")
-d=Die()
-print("Result of throw is ",d.throw())
+
+the_type =  Random_toss_classes.die.poly_type
+sides=Random_toss_classes.die.numb_sides
+
+print("Type is ",the_type,"\nNumber of sides is ",sides, "\n\n")
+# d=die()
+# print("Result of throw is ",d.throw())
