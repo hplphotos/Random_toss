@@ -7,5 +7,5 @@ the_type =  Random_toss_classes.die.poly_type
 sides=Random_toss_classes.die.numb_sides
 
 print("Type is ",the_type,"\nNumber of sides is ",sides, "\n\n")
-# d=die()
-# print("Result of throw is ",d.throw())
+d=Random_toss_classes.die()
+print("Result of throw is ",d.throw())
