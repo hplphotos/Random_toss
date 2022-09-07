@@ -18,7 +18,7 @@ Multi-sided objects are objects you can toss in the air and one of their sides w
 * A four-sided object is a dreidel. The outcome is one of the four Hebrew letters on the sides of the dreidel.
 * A six-sided object is a die, while a pair of them are called a set of dice. Outcome of tossing a die is an integer from one to six.
 
-## Current State of the simulation
+## Current State of the Simulation
 
 I've concentrated on the die class. One reason is that I'd like to simulate a game of baseball that I used to play with a pair of dice as a kid. Each outcome of tossing a pair of dice is mapped to a specific baseball occurrence, like a single, double, home run, strike out, etc. For example 2 & 2 is a double, 1 & 1 is a strikeout, 2 & 5 is a single, and 5 & 6 is a fly out.
 
