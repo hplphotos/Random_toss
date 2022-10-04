@@ -26,4 +26,10 @@ Person A tosses the dice to simulate the top of the first inning. After three ou
 
 Another possible simulation is to throw a pair of dice thousands of times and record the number of times each of the 36 possible outcomes comes up. For an unbiased pair of dice the result should be an equal number of hits for each of the possible outcomes. For n tosses, each of the outcomes should happen, in theory, n/36 times. This simulation can be done with just one die and then each possible outcome could occur n/6 times. In either case, a chi-squared test could be used to test the randomness of the simulation.
 
+## Execution Timing
+
+Since Python is an interpreted language, I was curious about how long it would take to run a simulation with millions of trials (tosses of the die). The file Random_toss04-timing.py using the `time` module to measure the start and stop time of the execution of the die tossing program.
+
+I set the number of tosses of the die to 6,000,000 and saved the start time. The last statement prints the difference between the end time and the start time in seconds. The result for the 6 million tosses, organized in a dictionary to save the results for each of the six possible outcomes, was about 6.4 seconds. This works out to just a bit over a million tosses in a second! This seems very fast for an interpreted language.
+
 
