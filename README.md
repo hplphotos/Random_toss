@@ -2,11 +2,13 @@
  
 ## Purpose of the Random_toss scripts
 
-The Random_toss set of python scripts simulate tossing a multi-sided object and reporting which side was "up". The various tests are numbered sequentially starting with **Random_toss01.py**. Random_toss03 and Random_toss03a test the ability to save the class structure in a separate file, Random_toss_classes.py, and import it into another file. 
+The Random_toss set of python scripts simulate tossing a multi-sided object and reporting which side was "up". The various tests are numbered sequentially starting with **Random_toss01.py**. Random_toss0 and Random_toss03a test the ability to save the class structure in a separate file, Random_toss_classes.py, and import it into another file. 
 
 **Random_toss03** imports the entire classes file and then uses specific classes. This means that the name of the file must precede the reference to specific attributes and methods (the_type =  Random_toss_classes.die.poly_type).
 
 On the other hand, **Random_toss03a** imports explicitly only the classes needed in this script. So references to specific attributes and methods do not need to be preceded by the file name (the_type = die.poly_type).
+
+The program **Random_toss04** uses a dictionary to save the number of times each of the six outcomes occurs. Since I set the number of tosses to 6 million I was curious about the execution time. The version **Random_toss04-timing** is the same as the **Random_toss04** version except that it contains some code to measure the execution time.
 
 ## Multi-sided Objects
 
