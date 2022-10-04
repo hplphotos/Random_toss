@@ -1,4 +1,7 @@
 from Random_toss_classes import polyhedron,die1
+import time
+
+start_time = time.time()
 
 num_tosses = 6000000
 toss_results = dict()
@@ -18,3 +21,6 @@ sum_tosses = 0
 for j in toss_results:
 	sum_tosses = sum_tosses + toss_results[j]
 print('Count of all tosses =', sum_tosses)
+
+#output execution time
+print("--- %s seconds ---" % (time.time() - start_time))
